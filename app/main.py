@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 
 
+
 def fetch_html(url: str, timeout: int = 10) -> str:
     response = requests.get(url, timeout=timeout)
     response.raise_for_status()
